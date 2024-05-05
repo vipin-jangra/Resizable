@@ -1,0 +1,363 @@
+:root {
+	
+	--c-white: #fff;
+	--c-black: #000;
+
+	--c-ash: #eaeef6;
+	--c-charcoal: #a0a0a0;
+	--c-void: #141b22;
+
+
+	--c-fair-pink: #FFEDEC;
+	--c-apricot: #FBC8BE;
+	--c-coffee: #754D42;
+	--c-del-rio: #917072;
+
+
+	--c-java: #1FCAC5;
+
+
+	--c-titan-white: #f1eeff;
+	--c-cold-purple: #a69fd6;
+	--c-indigo: #6558d3;
+	--c-governor: #4133B7;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #eaeef6;
+  background:
+    url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+    center / cover no-repeat fixed;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+.panel-group {
+  width: 100%;
+  height: 100%;
+
+}
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+  background-color: #fff;
+  
+  padding: 0px;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.first-div{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.information{
+  width: 100%;
+  height: 100%;
+  background-color: var(--c-white);
+	padding: 1.5rem;
+  margin: 0;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--c-titan-white);
+  color: var(--c-indigo);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5em 0.75em;
+  line-height: 1;
+  border-radius: 6px;
+  
+}
+.title{
+    font-size: 1.5rem;
+		color: var(--c-void);
+		line-height: 1.25;
+    margin-top: 0.5rem;
+}
+
+.main-div-content{
+  height: 100%;
+}
+
+.panel-col-resize-handle {
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+  background-color: rgba(255, 255, 255, 0.3); /* Set the background color with some opacity */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  padding: 2px;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.45);
+    
+  }
+}
+.panel-resize-handle {
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.3); /* Set the background color with some opacity */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.45);
+
+  }
+  
+}
+
+.info {
+  color: var(--c-charcoal);
+  & + * {
+    margin-top: 1.25rem;
+  }
+}
+
+.button{
+  font: inherit;
+		line-height: 1;
+		background-color: var(--c-white);
+		border: 2px solid var(--c-indigo);
+		color: var(--c-indigo);
+		padding: 0.5em 1em;
+		border-radius: 6px;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+    &:hover,
+		&:focus {
+			background-color: var(--c-indigo);
+			color: var(--c-white);
+		}
+}
+.text-white{
+  color: white;
+}
+
+
+.center{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+.title-div{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  width: 40%;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.information{
+
+	font-size: 18px;
+}
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+.product-image img {width: 100%;height: 100%;}
+
+.text-div {
+  font: inherit;
+  width: 100%;
+  height: 100%;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(237,196,237,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.text-area{
+  margin: 2rem;
+  padding: 12px;
+  height: 10%;
+}
+
+.justify-center{
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid gray;
+  height: 100%;
+}
+
+.action-button{
+  
+  font: inherit;
+  line-height: 1;
+  background-color: var(--c-white);
+  border: 2px solid var(--c-indigo);
+  color: var(--c-indigo);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: 500;
+  justify-content: center;
+  width: 50%;
+ 
+  margin-bottom: 2rem;
+  
+  gap: 0.5rem;
+  &:hover,
+  &:focus {
+    background-color: var(--c-indigo);
+    color: var(--c-white);
+  }
+}
+
+.update-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area-update{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+
+}
+
+.article-id{
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  
+}
+.check{
+  font-size: xx-large;
+  
+  &:hover{
+    background-color: rgb(139, 234, 139) ;
+    color: white;
+    
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-div{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/* Tablet (portrait) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .panel {
+    /* Adjust panel layout for tablet portrait */
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .product-details,
+  .product-image {
+    /* Adjust width or other styles for tablet portrait */
+    overflow: scroll;
+    width: 40%;
+    margin-top: 1.5rem;
+    padding: 2%;
+    
+  }
+  .title-div{
+    width: 100%;
+    overflow: scroll;
+  }
+  .text-div{
+    display: flex;
+    flex-direction: row;
+  }
+  .buttons{
+    width: 50%;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+  
+  .information,.main-div-content{
+    overflow: scroll;
+  }
+  .information{
+    padding: 0.5rem;
+  }
+  .product-details{
+    padding: 2%;
+  }
+
+  .title-div{
+    width: 100%;
+    overflow: scroll;
+  }
+  .text-div{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  
+  
+}
+
+
+  
