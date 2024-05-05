@@ -154,7 +154,7 @@ const App = () => {
             </button>
             {showUpdateDiv && (
             <div className='update-div'>
-              <div className='article-id'>Aricle Id - ${data['_id']}</div>
+              <div className='article-id'>Article Id - #{data['_id']}</div>
               <div className='text-area-update'>
                 <textarea value={updatedArticle} className="text-area" placeholder="type here...." name="postContent" onChange={(e)=> setUpdatedArticle(e.target.value)}/>
                 <i onClick={handleUpdate} className=" check ri-check-line"></i>
