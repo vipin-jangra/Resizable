@@ -5,7 +5,7 @@ const cors = require('cors');
 
 app.use(express.json());
 app.use(cors({ 
-    origin: ['https://resizable-gamma.vercel.app']
+    origin: 'https://resizable-gamma.vercel.app'
 }));
 
 require('dotenv').config();
