@@ -6,7 +6,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors(
     { 
-        origin: ['https://resizable-api.vercel.app'],
+        origin: ['https://resizable-gamma.vercel.app'],
         methods : ["POST","GET","PUT"],
         credentials : true
     }));
