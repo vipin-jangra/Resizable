@@ -4,7 +4,12 @@ const app = express();
 const cors = require('cors');
 
 app.use(express.json());
-app.use(cors({ origin: '*' }));
+app.use(cors(
+    { 
+        origin: ['https://resizable-api.vercel.app'],
+        methods : ["POST","GET","PUT"],
+        credentials : true
+    }));
 
 require('dotenv').config();
 
