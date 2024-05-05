@@ -4,7 +4,12 @@ const app = express();
 const cors = require('cors');
 
 app.use(express.json());
-app.use(cors({origin: '*'}));
+app.use(cors(
+    {
+        origin: '*',
+        methods : ["GET","POST","PUT"],
+        credentails : true
+    }));
 
 require('dotenv').config();
 
