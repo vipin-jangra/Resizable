@@ -112,9 +112,9 @@ const App = () => {
                 <div className="main-div-content">
                   <div className="product-details">
       
-                    <h2>{latestArticle ?? "Latest Technical Article"}</h2>
+                    <h2>{latestArticle ?? "Lorem Ipsum"}</h2>
         
-                    <p className="info"> Low-code development platforms have revolutionized the way software is built, offering a faster, more accessible approach to application development. As the demand for digital solutions continues to grow, low-code platforms are poised to play a crucial role in driving innovation and empowering businesses of all sizes.</p>
+                    <p className="info"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
     
           
                   </div>
