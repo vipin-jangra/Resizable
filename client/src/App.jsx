@@ -53,6 +53,7 @@ const App = () => {
         message.success(response.message);
         fetchLatestArticle();
         handleCounts();
+        setArticleContent('');
       }else{
         message.error(response.message);
       }
